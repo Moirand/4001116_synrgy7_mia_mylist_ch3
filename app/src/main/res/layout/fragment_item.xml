@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.cardview.CircularRevealCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="102dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="8dp"
+    android:id="@+id/champCardView">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="5">
+        
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/icon_champ"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"
+            android:layout_weight="2"/>
+        
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="8dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_champ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Champ"
+                android:textSize="18sp"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_alias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alias"
+                android:textSize="12sp"/>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/icon_role"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="2">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/icon_region"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/ic_launcher"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_region"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Region"
+                android:layout_marginTop="4dp"
+                android:textSize="12sp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:background="@drawable/ic_launcher_background">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Nama Champ"
+            android:textSize="24dp"/>
+    </FrameLayout>
+</com.google.android.material.circularreveal.cardview.CircularRevealCardView>
