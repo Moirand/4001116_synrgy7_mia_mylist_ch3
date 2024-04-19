@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">MyChampionList</string>
     <string name="quote">%1$s</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="detail_tab_name">Detail</string>
     <string name="bio_tab_name">Bio</string>
+
     <string name="bio_caitlyn">
         """
         Terlahir di keluarga kaya raya dan berpengaruh di Piltover yang beranggotakan Artificer bidang Hextech, Caitlyn dengan cepat mempelajari gemerlapnya kehidupan sosial perkotaan, namun dia memilih untuk menghabiskan waktu di alam liar daerah selatan. Berbekal kemampuan berbaur dengan kaum berada di City of Progress yang sama baiknya dengan kemampuan berburu rusa melewati daerah hutan berlumpur, Caitlyn menghabiskan masa mudanya di luar gerbang Piltover. Dia dapat melacak burung yang sedang beterbangan atau menembakkan peluru menembus mata seekor kelinci dari jarak ratusan meter menggunakan Bilgewater Repeater Musket milik ayahnya.
@@ -218,7 +218,7 @@
 
         Lux tinggal di ibu kota selama beberapa tahun, berlatih dengan the Radiant Ones dan belajar dari the Illuminators sebelum melaksanakan misi pertama. Dia harus menyusup ke tanah yang diperebutkan antara Demacia timur dan kerajaan Noxus untuk menyelidiki tanda-tanda agen musuh yang coba mempersatukan Negara kecil ini melawan Demacia. Misi Lux berjalan sukses dan rencana jahat itu pun digagalkan, aliansi rapuh yang didalangi agen Noxus hancur dikarenakan adanya pengkhianatan dan penipuan. Misi berikutnya mengikuti, tiap misi membentuk reputasi Lux sebagai seseorang yang dapat menuntaskan misi, tak peduli sesulit apapun itu.
 
-        Di balik tembok Demacia, Lux belajar banyak tentang dunia dan melihat keberagamannya yang melimpah, sejarah yang dikisahkan dan banyak jenis orang. Dia menyimpulkan bahwa cara hidup Demacia tidaklah absolut, dia mampu mengetahui kekurangan maupun kelebihannya. Saat jauh dari kampung halamannya, Lux dapat menggunakan kemampuannya dengan leluasa, namun tetap menyembunyikannya saat kembali pulang untuk mengunjungi orangtuanya dan Garen. Bagi sang kakak dan keluarganya, dia adalah sosok pelayan yang setia pada Demacia... yang benar adanya, namun bukan dengan cara yang mereka kira.
+        Di balik tembok Demacia, Lux belajar banyak tentang dunia dan melihat keberagamannya yang melimpah, sejarah yang dikisahkan dan banyak jenis orang. Dia menyimpulkan bahwa cara hidup Demacia tidaklah absolut, dia mampu mengetahui kekurangan maupun kelebihannya. Saat jauh dari kampung halamannya, Lux dapat menggunakan kemampuannya dengan leluasa, namun tetap menyembunyikannya saat kembali pulang untuk mengunjungi orangtuanya dan Garen. Bagi sang kakak dan keluarganya, dia adalah sosok pelayan yang setia pada Demacia… yang benar adanya, namun bukan dengan cara yang mereka kira.
         """
     </string>
     <string name="bio_malzahar">
@@ -331,4 +331,14 @@
         """
     </string>
 
+    <string name="quote_caitlyn">To be the best hunter, you have to be able to think like your prey</string>
+    <string name="quote_ezreal">If I don’t know the rules, then how can I be breaking them?</string>
+    <string name="quote_graves">We’re here for your gold, not your heads… so don’t nobody decide to be a hero</string>
+    <string name="quote_janna">Do not fear the winds of change—they will always be at your back</string>
+    <string name="quote_karma">As Ionia changes, so must I</string>
+    <string name="quote_katarina">Never question my loyalty. You will never know what I endure for it</string>
+    <string name="quote_lux">The light inside is what makes me different, and I’m always careful where I shine it</string>
+    <string name="quote_malzahar">We are timeless. We demand sacrifice</string>
+    <string name="quote_viktor">A mechanized heart never misses a beat, and never falters with emotion. So why would anyone trust their life to a fragile muscle of flesh and blood?</string>
+    <string name="quote_yasuo">Death is like the wind—always by my side</string>
 </resources>

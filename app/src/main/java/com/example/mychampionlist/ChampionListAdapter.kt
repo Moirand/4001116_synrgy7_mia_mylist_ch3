@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.mychampionlist.data.Champion
 import com.example.mychampionlist.databinding.FragmentItemBinding
-import com.example.mychampionlist.databinding.FragmentItemGridBinding
 import com.example.mychampionlist.utils.ChampionDiffUtil
 import com.google.android.material.imageview.ShapeableImageView
 
@@ -61,13 +60,6 @@ class ChampionListAdapter :
                 )
             }
 
-        }
-    }
-
-    inner class VViewHolder(private val binding: FragmentItemGridBinding) :
-        RecyclerView.ViewHolder(binding.root) {
-        fun a() {
-            binding.test
         }
     }
 }

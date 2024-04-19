@@ -10,7 +10,6 @@ import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import com.example.mychampionlist.LoadImageUrl
-import com.example.mychampionlist.R
 import com.example.mychampionlist.data.Champions
 import com.example.mychampionlist.data.Regions
 import com.example.mychampionlist.data.Roles
@@ -44,7 +43,7 @@ class DetailFragment : Fragment() {
             binding.imgChampIcon.LoadImageUrl(binding.root.context, champion.iconUrl)
             binding.tvChampName.text = champion.champName
             binding.tvChampAlias.text = champion.alias
-            binding.tvChampQuote.text = resources.getString(R.string.quote, champion.quote)
+            binding.tvChampQuote.text = resources.getString(champion.quote)
             binding.btnDeeplink.setOnClickListener {
                 val intent = Intent(Intent.ACTION_VIEW, Uri.parse(champion.siteUrl))
                 requireActivity().startActivity(intent)
