@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">MyChampionList</string>
+    <string name="quote">%1$s</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="detail_tab_name">Detail</string>
     <string name="bio_tab_name">Bio</string>
     <string name="bio_caitlyn">

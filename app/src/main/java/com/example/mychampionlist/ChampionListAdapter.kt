@@ -9,11 +9,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.mychampionlist.data.Champion
 import com.example.mychampionlist.databinding.FragmentItemBinding
+import com.example.mychampionlist.databinding.FragmentItemGridBinding
 import com.example.mychampionlist.utils.ChampionDiffUtil
 import com.google.android.material.imageview.ShapeableImageView
 
-class ChampionListAdapter : ListAdapter<Champion, ChampionListAdapter.ViewHolder>(ChampionDiffUtil()) {
-
+class ChampionListAdapter :
+    ListAdapter<Champion, ChampionListAdapter.ViewHolder>(ChampionDiffUtil()) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
             FragmentItemBinding.inflate(
@@ -23,13 +24,12 @@ class ChampionListAdapter : ListAdapter<Champion, ChampionListAdapter.ViewHolder
             )
         )
     }
-
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) = holder.bind(getItem(position))
-
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) =
+        holder.bind(getItem(position))
     override fun getItemCount(): Int = currentList.size
-
-    inner class ViewHolder(private val binding: FragmentItemBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(data: Champion){
+    inner class ViewHolder(private val binding: FragmentItemBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+        fun bind(data: Champion) {
             data.name.let { champion ->
                 binding.tvChamp.text = champion.champName
                 binding.tvAlias.text = champion.alias
@@ -42,7 +42,8 @@ class ChampionListAdapter : ListAdapter<Champion, ChampionListAdapter.ViewHolder
             }
 
             data.role.forEach { role ->
-                val iconRoleView = CreateShapeableImageView(binding.root.context, 30, 30, 0, 0, 4, 0)
+                val iconRoleView =
+                    CreateShapeableImageView(binding.root.context, 30, 30, 0, 0, 4, 0)
                 binding.iconRole.addView(iconRoleView)
                 iconRoleView.LoadImageUrl(binding.root.context, role.iconUrl)
             }
@@ -62,16 +63,21 @@ class ChampionListAdapter : ListAdapter<Champion, ChampionListAdapter.ViewHolder
 
         }
     }
+
+    inner class VViewHolder(private val binding: FragmentItemGridBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+        fun a() {
+            binding.test
+        }
+    }
 }
 
 fun dpTOpx(context: Context, dp: Int): Int = (dp * context.resources.displayMetrics.density).toInt()
 
-fun ShapeableImageView.LoadImageUrl(context: Context?, url: String) {
-    if (context != null) {
-        Glide.with(context)
-            .load(url)
-            .into(this)
-    }
+fun ShapeableImageView.LoadImageUrl(context: Context, url: String) {
+    Glide.with(context)
+        .load(url)
+        .into(this)
 }
 
 fun CreateShapeableImageView(

@@ -29,7 +29,7 @@ class DetailsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val champion = args.dataChampion
 
-        binding.imgSplash.LoadImageUrl(context, champion.name.splashUrl)
+        binding.imgSplash.LoadImageUrl(binding.root.context, champion.name.splashUrl)
 
         binding.viewpager.adapter =
             ViewPagerAdapter(this, listOf(DetailFragment(), StoryFragment()), champion)
