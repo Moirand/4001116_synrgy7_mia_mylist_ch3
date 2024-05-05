@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/layoutview"
-        android:icon="@drawable/ic_linearview"
-        app:showAsAction="ifRoom"
-        android:title=""/>
+        android:id="@+id/layoutViewMenu"
+        android:icon="@drawable/ic_gridview"
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/signoutMenu"
+        android:title="Sign Out"/>
+    <item
+        android:id="@+id/deleteAccountMenu"
+        android:title="Delete Account"/>
 </menu>
