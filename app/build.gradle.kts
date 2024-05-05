@@ -1,7 +1,8 @@
 plugins {
-    alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
-    id("androidx.navigation.safeargs")
+    alias(libs.plugins.androidApplication)
+    alias(libs.plugins.safeArgs)
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -43,7 +44,10 @@ dependencies {
     implementation(libs.androidx.viewpager2)
     implementation(libs.androidx.swiperefreshlayout)
     implementation(libs.com.github.bumptech.glide.glide)
-    annotationProcessor(libs.com.github.bumptech.glide.glide.compiler)
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx)
+    ksp(libs.androidx.room.compiler)
+    ksp(libs.com.github.bumptech.glide.glide.compiler)
 
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
