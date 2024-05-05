@@ -1,6 +1,7 @@
 package com.example.mychampionlist.data
 
 import com.example.mychampionlist.R
+import com.example.mychampionlist.data.dataclass.Champion
 
 object ChampionsList {
     val champions : List<Champion> = listOf(

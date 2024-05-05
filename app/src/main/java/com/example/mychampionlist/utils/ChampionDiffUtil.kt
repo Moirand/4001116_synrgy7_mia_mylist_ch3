@@ -1,7 +1,7 @@
 package com.example.mychampionlist.utils
 
 import androidx.recyclerview.widget.DiffUtil
-import com.example.mychampionlist.data.Champion
+import com.example.mychampionlist.data.dataclass.Champion
 
 class ChampionDiffUtil: DiffUtil.ItemCallback<Champion>() {
     override fun areItemsTheSame(oldItem: Champion, newItem: Champion): Boolean {

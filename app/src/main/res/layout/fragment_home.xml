@@ -8,11 +8,11 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/list"
-        android:name="com.example.mychampionlist.ItemFragment"
+        android:name="com.example.mychampionlist.HomeFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingHorizontal="16dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:context=".ItemFragment"
+        tools:context=".ui.HomeFragment"
         tools:listitem="@layout/fragment_item"/>
 </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

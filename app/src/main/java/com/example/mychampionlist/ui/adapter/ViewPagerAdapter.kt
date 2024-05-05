@@ -1,11 +1,11 @@
-package com.example.mychampionlist.detail
+package com.example.mychampionlist.ui.adapter
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.mychampionlist.data.Champion
-import com.example.mychampionlist.detail.tablayout.DetailFragment
-import com.example.mychampionlist.detail.tablayout.StoryFragment
+import com.example.mychampionlist.data.dataclass.Champion
+import com.example.mychampionlist.ui.DetailFragment
+import com.example.mychampionlist.ui.BioFragment
 import java.io.Serializable
 
 class ViewPagerAdapter(
@@ -24,7 +24,7 @@ class ViewPagerAdapter(
                 putSerializable(DetailFragment.CHAMPIONS_BUNDLE, champion.name)
                 putSerializable(DetailFragment.REGIONS_BUNDLE, champion.region)
                 putSerializable(DetailFragment.ROLES_BUNDLE, champion.role as Serializable)
-                putInt(StoryFragment.CHAMPION_STORY, champion.story)
+                putInt(BioFragment.CHAMPION_BIO, champion.story)
             }
         }
     }

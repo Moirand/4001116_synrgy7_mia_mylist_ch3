@@ -1,4 +1,4 @@
-package com.example.mychampionlist
+package com.example.mychampionlist.ui.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,8 +7,9 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.mychampionlist.data.Champion
+import com.example.mychampionlist.data.dataclass.Champion
 import com.example.mychampionlist.databinding.FragmentItemBinding
+import com.example.mychampionlist.ui.HomeFragmentDirections
 import com.example.mychampionlist.utils.ChampionDiffUtil
 import com.google.android.material.imageview.ShapeableImageView
 
@@ -23,8 +24,10 @@ class ChampionListAdapter :
             )
         )
     }
+
     override fun onBindViewHolder(holder: ViewHolder, position: Int) =
         holder.bind(getItem(position))
+
     override fun getItemCount(): Int = currentList.size
     inner class ViewHolder(private val binding: FragmentItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
@@ -49,7 +52,7 @@ class ChampionListAdapter :
 
             binding.champCardView.setOnClickListener {
                 binding.root.findNavController().navigate(
-                    ItemFragmentDirections.actionItemFragmentToDetailsFragment(
+                    HomeFragmentDirections.actionHomeFragmentToListItemFragment(
                         Champion(
                             data.name,
                             data.region,
@@ -59,7 +62,6 @@ class ChampionListAdapter :
                     )
                 )
             }
-
         }
     }
 }

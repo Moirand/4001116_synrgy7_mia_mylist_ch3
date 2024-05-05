@@ -3,24 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/itemFragment">
+    app:startDestination="@id/homeFragment">
 
     <fragment
-        android:id="@+id/itemFragment"
-        android:name="com.example.mychampionlist.ItemFragment"
-        android:label="fragment_item_list"
-        tools:layout="@layout/fragment_item_list" >
+        android:id="@+id/homeFragment"
+        android:name="com.example.mychampionlist.ui.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
         <action
-            android:id="@+id/action_itemFragment_to_detailsFragment"
-            app:destination="@id/detailsFragment" />
+            android:id="@+id/action_homeFragment_to_listItemFragment"
+            app:destination="@id/listItemFragment" />
     </fragment>
     <fragment
-        android:id="@+id/detailsFragment"
-        android:name="com.example.mychampionlist.detail.DetailsFragment"
-        android:label="fragment_details"
-        tools:layout="@layout/fragment_details">
+        android:id="@+id/listItemFragment"
+        android:name="com.example.mychampionlist.ui.ListItemFragment"
+        android:label="fragment_list_item"
+        tools:layout="@layout/fragment_list_item">
         <argument
             android:name="dataChampion"
-            app:argType="com.example.mychampionlist.data.Champion" />
+            app:argType="com.example.mychampionlist.data.dataclass.Champion" />
     </fragment>
 </navigation>
